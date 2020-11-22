@@ -8,4 +8,6 @@
  */
 void faxpy( int n, float a, float *x, float *y, float *result ) {
 	// TODO: Implement the C-level code here
+    for (int i = 1; i < n; i++ )
+        result[i] = a * x[i] + y[i];
 }
